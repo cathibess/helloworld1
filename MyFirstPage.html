@@ -18,12 +18,26 @@
             Adding calculator
         </h2>
         <div> <!-- Outra divisao... -->
-            Num 1: <!-- << Texto normal... --> <input type="text" id="Num1" value="0" /> <!-- Esse tag e muito espcial... Porque mostra um INPUT (Ou seja algo que permite o usuario escrever) -->
+            Num 1: <!-- << Texto normal... --> <input id="num1" type="text" id="Num1" value="0" /> <!-- Esse tag e muito espcial... Porque mostra um INPUT (Ou seja algo que permite o usuario escrever) -->
             <br /> <!-- Esse tag e BREAK, forca uma nova linha...-->
             Num 2: <input type="text" id="Num2" value="0" /><!-- << Mesma coisa aqui... -->
+            <br />
+            <input type="button" value="Go" onclick="showAlert();" />
         </div>
         <div>
             Click <a href="MySecondPage.html">here</a> to see my second page.
         </div>
     </body> <!-- (Comentario 2: Esse aqui e o fim do TAG body) -->
+
+    <script>
+        
+
+        function showAlert(){
+            var nome = "Cathie";
+
+            var num1 = window.document.getElementById("num1");
+
+            alert(num1.value);
+        }
+    </script>
 </html><!-- Toda pagina sempre comeca com HTML e termina com HTML... Sempre. -->
